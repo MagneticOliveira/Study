@@ -1,0 +1,14 @@
+Resumindo this();
+
+É um metodo que procura o construtor que contenha os argumentos nele solicitados,
+this(name); procura em tod* o código, outro construtor de mesmo nome que contenha
+todos os argumentos argumentados em this(...) e o executa, só funciona em construtores.
+
+Serve para facilitar a adição de novos atributos em objetos, adicionando sempre um novo
+construtor com todos os atributos já existentes sem precisar alterar os construtores já
+criados e evitando conflitos, o que faz uma sobrecarga de metodos que conversam entre sí.
+
+Como usar:
+Sempre que houver um novo atributo ele será posto no objeto e criasse um novo construtor
+com todos os antigos atributos, contendo um this(name, tipo etc...) na primeira linha deste
+construtor
